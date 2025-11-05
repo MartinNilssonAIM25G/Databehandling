@@ -5,28 +5,29 @@ __pycache__/
 *.pyd
 *.so
 
-# === Virtual environment ===
+# === Virtual environments ===
 venv/
 env/
 .venv/
 
-# === Jupyter Notebook checkpoints ===
+# === Jupyter Notebooks ===
 .ipynb_checkpoints/
+*.nbconvert.ipynb
 
 # === VS Code ===
 .vscode/
 !.vscode/settings.json  # behåll bara projektinställningar om du vill dela dem
 
-# === OS/Editor skräp ===
+# === OS/Editor junk ===
 .DS_Store
 Thumbs.db
 
-# === Loggar och temporära filer ===
+# === Logs & temp files ===
 *.log
 *.tmp
 *.bak
 
-# === Byggfiler och cache ===
+# === Build / Distribution ===
 *.egg
 *.egg-info/
 dist/
@@ -35,28 +36,22 @@ build/
 *.manifest
 *.spec
 
-# === Pytest och coverage ===
+# === Testing / Coverage ===
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 .nox/
 
-# === Jupyter/nbconvert output ===
-*.nbconvert.ipynb
-
-# === Environments och konfigar ===
+# === Environments / Configs ===
 .env
 .env.*
 
-# Ignorera dataset och tillfälliga filer
+# === Data files ===
 *.csv
 *.xlsx
-
-# Ignorera Jupyter cache
-.ipynb_checkpoints/
-__pycache__/
-
-# Ignorera OS-skräp
-.DS_Store
-Thumbs.db
+*.tsv
+*.json
+*.parquet
+data/
+datasets
